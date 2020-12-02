@@ -1,0 +1,32 @@
+{
+  "name": "backend-react-chat-app",
+  "version": "1.0.0",
+  "description": "this is react chat app",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js --exec babel-node"
+  },
+  "keywords": [
+    "chat",
+    "websocket",
+    "io-socket"
+  ],
+  "author": "hyojin an",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "http": "0.0.1-security",
+    "nodemon": "^2.0.6",
+    "socket.io": "^3.0.3"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.12.8",
+    "@babel/core": "^7.12.9",
+    "@babel/node": "^7.12.6",
+    "@babel/polyfill": "^7.12.1",
+    "@babel/preset-env": "^7.12.7",
+    "babel-loader": "^8.2.2"
+  }
+}
