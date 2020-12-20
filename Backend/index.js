@@ -30,7 +30,7 @@ io.on("connection", (socket) => {
     io.to(socket.id).emit('my socket id', { socketId: socket.id });
 
     socket.on('enter chatroom', () => {
-        console.log("누군가 입장함");
+        console.log("Someone Enter the ChatRoom");
         socket.broadcast.emit('receive chat', { type: "alert", chat: "누군가가 입장하였습니다.", regDate: Date.now() });
     })
 
